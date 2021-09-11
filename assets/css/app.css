@@ -22,7 +22,6 @@ body {
 	font-family: -apple-system, 'Inter', sans-serif;
 	margin: 0;
 	user-select: none;
-	padding-bottom: 48px;
 	height: 100%;
 	color: var(--text-color);
 }
@@ -39,6 +38,10 @@ body {
 	overflow-x: hidden;
 }
 
+#roster-container {
+	padding: 48px 0;
+}
+
 .card {
 	background-color: var(--card-background-color);
 	display: flex;
@@ -50,13 +53,12 @@ body {
 
 .card > span {
 	display: flex;
-	flex: 1;
 	align-items: center;
-	margin: 0 8px;
 }
 
 .card .name {
-	flex: 4;
+	flex: 1;
+	margin: 0 16px;
 }
 
 .card .number,
@@ -64,6 +66,7 @@ body {
 	font-weight: bold;
 	font-size: 24px;
 	justify-content: center;
+	width: 48px;
 }
 
 .card img {
