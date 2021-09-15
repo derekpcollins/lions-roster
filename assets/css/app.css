@@ -38,10 +38,6 @@ body {
 	overflow-x: hidden;
 }
 
-#roster-container {
-	padding: 48px 0;
-}
-
 .card {
 	background-color: var(--card-background-color);
 	display: flex;
