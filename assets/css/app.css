@@ -49,7 +49,9 @@ body {
 }
 
 header {
-	padding: 40px 0 0 0;
+	padding: 48px 0 0 0;
+	position: sticky;
+	top: 0;
 }
 
 #options-list {
@@ -61,6 +63,8 @@ header {
 	border: 1px solid var(--nav-border-color);
 	border-radius: 4px;
 	overflow: hidden;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
 }
 
 #options-list li {
@@ -68,6 +72,11 @@ header {
 	padding: 4px;
 	font-size: 14px;
 	text-align: center;
+	border-left: 1px solid var(--nav-border-color);
+}
+
+#options-list li:first-of-type {
+	border-left: 0;
 }
 
 #options-list .active {
