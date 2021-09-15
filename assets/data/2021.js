@@ -3,13 +3,13 @@ const players = [
 		"name": "Chase McLaughlin",
 		"number": "3",
 		"position": "K",
-		"status": "RES"
+		"status": "ACT"
 	},
 	{
 		"name": "Chris Nagger",
 		"number": "1",
 		"position": "K",
-		"status": "ACT"
+		"status": "RES"
 	},
 	{
 		"name": "Anthony Walker",
