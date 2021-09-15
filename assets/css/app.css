@@ -4,6 +4,8 @@
 	--card-background-color: rgba(255,255,255,.25);
 	--img-background-color: rgba(255,255,255,.15);
 	--text-color: rgba(255,255,255,.9);
+	--nav-border-color: rgba(255,255,255,.3);
+	--nav-active-color: rgba(255,255,255,.15);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,6 +14,8 @@
 		--card-background-color: rgba(0,0,0,.15);
 		--img-background-color: rgba(0,0,0,.3);
 		--text-color: rgba(255,255,255,.75);
+		--nav-border-color: rgba(255,255,255,.3);
+		--nav-active-color: rgba(255,255,255,.15);
 	}
 }
 
@@ -44,8 +48,34 @@ body {
 	-webkit-overflow-scrolling: touch;
 }
 
+header {
+	padding: 40px 0 0 0;
+}
+
+#options-list {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin: 0 8px;
+	padding: 0;
+	border: 1px solid var(--nav-border-color);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+#options-list li {
+	flex: 1;
+	padding: 4px;
+	font-size: 14px;
+	text-align: center;
+}
+
+#options-list .active {
+	background-color: var(--nav-active-color);
+}
+
 #roster-container {
-	padding: 40px 0;
+	padding: 16px 0 40px;
 }
 
 .card {

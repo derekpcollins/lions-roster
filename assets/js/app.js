@@ -31,12 +31,33 @@ const createCard = (data) => {
 	return card;
 }
 
-// Loop over the players array
-// See data/2021.js
-for(const player of players) {
-	let card;
-	if(player.status === 'ACT') {
-		card = createCard(player);
-		container.appendChild(card);
+const showRoster = (obj) => {
+	container.innerHTML = '';
+	// Loop over the players array
+	// See data/2021.js
+	for(const player of players) {
+		let card;
+		if(player.status === obj.status && player.side === obj.side) {
+			card = createCard(player);
+			container.appendChild(card);
+		}
 	}
 }
+
+// Clicks on nav
+const optionsList = document.getElementById('options-list');
+optionsList.addEventListener('click', (event) => {
+	const side = event.target.getAttribute('data-side');
+	showRoster({status: 'ACT', side: side.toString()});
+	
+	// Remove currently active class
+	const currentActive = optionsList.getElementsByClassName('active')[0];
+	currentActive.classList.remove('active');
+	
+	// Add new active class
+	const newActive = event.target.classList.add('active');
+});
+
+
+// Initial load
+showRoster({status: 'ACT', side: 'OFF'});
