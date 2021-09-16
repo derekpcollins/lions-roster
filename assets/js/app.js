@@ -23,7 +23,7 @@ const createCard = (data) => {
 	let imageName = (data.name).split(' ').join('-');
 	let image = document.createElement('img');
 	image.setAttribute('loading', 'lazy');
-	image.src = 'assets/img/' + imageName + '.png';
+	image.src = 'assets/img/players/' + imageName + '.png';
 	image.height = 80;
 	image.width = 80;
 	card.appendChild(image);
