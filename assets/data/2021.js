@@ -109,7 +109,7 @@ const players = [
 		"number": "23",
 		"position": "CB",
 		"status": "ACT",
-		"side": "DEFF"
+		"side": "DEF"
 	},
 	{
 		"name": "Nick Chubb",
