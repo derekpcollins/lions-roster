@@ -3,22 +3,24 @@ A mobile web app that displays the current Cleveland Browns roster ordered by je
 
 ## How to add the app on iOS
 
-1. Go to https://derekpcollins.github.io/browns-roster/ in Safari
-2. Tap the "Share" icon <img src="/assets/img/screenshots/share-icon.jpg" height="28" width="28">
-3. Scroll down and tap "Add to Home Screen"
-4. Tap "Add"
+Go to https://derekpcollins.github.io/browns-roster/ in Safari and follow the instructions below:
 
 <table>
 	<tr>
-		<td>Add to Home Screen</td>
-		<td>Add</td>
-		<td>App Icon</td>
+		<td>Tap the "Share" icon</td>
+		<td>Scroll down and tap "Add to Home Screen"</td>
+		<td>Tap "Add"</td>
 	</tr>
 	<tr>
+		<td><img src="/assets/img/screenshots/share-icon.jpg"></td>
 		<td><img src="/assets/img/screenshots/add-to-home-screen.jpg"></td>
 		<td><img src="/assets/img/screenshots/add.jpg"></td>
-		<td><img src="/assets/img/screenshots/app-icon.jpg"></td>
 	</tr>
+</table>
+
+## What does the app look like?
+
+<table>
 	<tr>
 		<td>Light Mode</td>
 		<td>Dark Mode</td>
