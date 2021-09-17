@@ -452,7 +452,7 @@ const players = [
 		"number": "90",
 		"position": "LB",
 		"status": "ACT",
-		"side": "OFF"
+		"side": "DEF"
 	},
 	{
 		"name": "Joe Jackson",
