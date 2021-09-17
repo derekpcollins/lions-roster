@@ -24,11 +24,11 @@ Go to https://derekpcollins.github.io/browns-roster/ in Safari and follow the in
 	<tr>
 		<td>Light Mode</td>
 		<td>Dark Mode</td>
-		<td></td>
+		<td>App Icon</td>
 	</tr>
 	<tr>
 		<td><img src="/assets/img/screenshots/light-mode.jpg"></td>
 		<td><img src="/assets/img/screenshots/dark-mode.jpg"></td>
-		<td></td>
+		<td><img src="/assets/img/screenshots/app-icon.jpg"></td>
 	</tr>
 </table>
