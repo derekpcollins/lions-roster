@@ -10,7 +10,7 @@ A mobile web app that displays the current Cleveland Browns roster ordered by je
 
 <table>
 	<tr>
-		<td>Add to Home Screen</td>
+		<td style="text-align: center">Add to Home Screen</td>
 		<td>Add</td>
 		<td>App Icon</td>
 	</tr>
