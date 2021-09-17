@@ -10,7 +10,7 @@ A mobile web app that displays the current Cleveland Browns roster ordered by je
 
 <table>
 	<tr>
-		<td style="text-align: center">Add to Home Screen</td>
+		<td>Add to Home Screen</td>
 		<td>Add</td>
 		<td>App Icon</td>
 	</tr>
@@ -18,5 +18,15 @@ A mobile web app that displays the current Cleveland Browns roster ordered by je
 		<td><img src="/assets/img/screenshots/add-to-home-screen.jpg"></td>
 		<td><img src="/assets/img/screenshots/add.jpg"></td>
 		<td><img src="/assets/img/screenshots/app-icon.jpg"></td>
+	</tr>
+	<tr>
+		<td>Light Mode</td>
+		<td>Dark Mode</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><img src="/assets/img/screenshots/light-mode.jpg"></td>
+		<td><img src="/assets/img/screenshots/dark-mode.jpg"></td>
+		<td></td>
 	</tr>
 </table>
