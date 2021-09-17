@@ -32,3 +32,7 @@ You can simply visit https://derekpcollins.github.io/browns-roster/ in Safari, b
 		<td><img src="/assets/img/screenshots/app-icon.jpg"></td>
 	</tr>
 </table>
+
+## License
+
+This work is is licensed under the [GNU General Public License v3.0](/LICENSE.md).
