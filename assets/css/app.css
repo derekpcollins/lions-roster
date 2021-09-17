@@ -8,16 +8,7 @@
 	--nav-active-color: rgba(255,255,255,.15);
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background-color: #1a1a1a;
-		--card-background-color: rgba(0,0,0,.15);
-		--img-background-color: rgba(0,0,0,.3);
-		--text-color: rgba(255,255,255,.75);
-		--nav-border-color: rgba(255,255,255,.3);
-		--nav-active-color: rgba(255,255,255,.15);
-	}
-}
+
 
 html,
 body {
