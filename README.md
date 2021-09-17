@@ -1,5 +1,5 @@
 # Cleveland Browns Roster
-A mobile web app that displays the current Cleveland Browns roster by jersey number and allows you to quickly switch between Offense, Defense, and Special Teams.
+A mobile web app that displays the current Cleveland Browns roster ordered by jersey number and allows you to quickly switch between Offense, Defense, and Special Teams.
 
 ## How to add the app on iOS
 

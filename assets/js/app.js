@@ -44,7 +44,7 @@ const showRoster = (obj) => {
 	}
 }
 
-// Clicks on nav
+// Handle clicks on nav
 const optionsList = document.getElementById('options-list');
 optionsList.addEventListener('click', (event) => {
 	const side = event.target.getAttribute('data-side');
