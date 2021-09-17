@@ -450,7 +450,7 @@ const players = [
 	{
 		"name": "Jadeveon Clowney",
 		"number": "90",
-		"position": "LB",
+		"position": "DE",
 		"status": "ACT",
 		"side": "DEF"
 	},
@@ -459,7 +459,7 @@ const players = [
 		"number": "91",
 		"position": "DE",
 		"status": "ACT",
-		"side": "OFF"
+		"side": "DEF"
 	},
 	{
 		"name": "Sheldon Day",
