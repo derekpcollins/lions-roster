@@ -18,8 +18,6 @@ You can simply visit https://derekpcollins.github.io/browns-roster/ in Safari, b
 	</tr>
 </table>
 
-Alternatively, you can just visit the website in Safari.
-
 ## What does the app look like?
 
 <table>
