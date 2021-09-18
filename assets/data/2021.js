@@ -17,7 +17,7 @@ const players = [
 		"name": "Anthony Walker",
 		"number": "4",
 		"position": "LB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -262,7 +262,7 @@ const players = [
 		"name": "Elijah Lee",
 		"number": "52",
 		"position": "LB",
-		"status": "DEV",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
