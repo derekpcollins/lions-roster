@@ -73,7 +73,7 @@ const players = [
 		"name": "Derrick Willies",
 		"number": "16",
 		"position": "WR",
-		"status": "ACT",
+		"status": "BAK",
 		"side": "OFF"
 	},
 	{
@@ -199,7 +199,7 @@ const players = [
 		"name": "Johnny Stanton",
 		"number": "40",
 		"position": "RB",
-		"status": "ACT",
+		"status": "BAK",
 		"side": "OFF"
 	},
 	{
@@ -252,7 +252,7 @@ const players = [
 		"side": "DEF"
 	},
 	{
-		"name": "Mack Wilson",
+		"name": "Mack Wilson Sr.",
 		"number": "51",
 		"position": "LB",
 		"status": "ACT",
@@ -339,7 +339,7 @@ const players = [
 		"name": "Drake Dorbeck",
 		"number": "68",
 		"position": "OG",
-		"status": "ACT",
+		"status": "BAK",
 		"side": "OFF"
 	},
 	{
@@ -388,7 +388,7 @@ const players = [
 		"name": "Jarvis Landry",
 		"number": "80",
 		"position": "WR",
-		"status": "ACT",
+		"status": "RES",
 		"side": "OFF"
 	},
 	{
@@ -507,6 +507,13 @@ const players = [
 		"name": "Andrew Billings",
 		"number": "99",
 		"position": "DT",
+		"status": "ACT",
+		"side": "DEF"
+	},
+	{
+		"name": "Ifeadi Odenigbo",
+		"number": "00",
+		"position": "DE",
 		"status": "ACT",
 		"side": "DEF"
 	},

@@ -84,7 +84,7 @@ header {
 }
 
 #roster-container {
-	padding: 16px 0 40px;
+	padding: 16px 0;
 }
 
 .card {
@@ -117,4 +117,18 @@ header {
 .card img {
 	background-color: var(--img-background-color);
 	display: block;
+}
+
+footer {
+	padding: 0 0 40px 0;
+}
+
+footer p {
+	color: var(--text-color);
+	font-size: 12px;
+	text-align: center;
+}
+
+footer p a {
+	color: var(--text-color);
 }
