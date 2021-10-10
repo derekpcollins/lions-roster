@@ -192,7 +192,7 @@ const players = [
 		"name": "Richard LeCounte III",
 		"number": "39",
 		"position": "S",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -213,7 +213,7 @@ const players = [
 		"name": "Tony Fields II",
 		"number": "42",
 		"position": "LB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -283,6 +283,13 @@ const players = [
 		"name": "Malcolm Smith",
 		"number": "56",
 		"position": "LB",
+		"status": "ACT",
+		"side": "DEF"
+	},
+	{
+		"name": "Ifeadi Odenigbo",
+		"number": "57",
+		"position": "DE",
 		"status": "ACT",
 		"side": "DEF"
 	},
@@ -451,7 +458,7 @@ const players = [
 		"name": "Jadeveon Clowney",
 		"number": "90",
 		"position": "DE",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -472,7 +479,7 @@ const players = [
 		"name": "Tommy Togiai",
 		"number": "93",
 		"position": "DT",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -507,13 +514,6 @@ const players = [
 		"name": "Andrew Billings",
 		"number": "99",
 		"position": "DT",
-		"status": "ACT",
-		"side": "DEF"
-	},
-	{
-		"name": "Ifeadi Odenigbo",
-		"number": "57",
-		"position": "DE",
 		"status": "ACT",
 		"side": "DEF"
 	},
