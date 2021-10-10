@@ -17,7 +17,7 @@ const players = [
 		"name": "Anthony Walker",
 		"number": "4",
 		"position": "LB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -87,7 +87,7 @@ const players = [
 		"name": "Greg Newsome II",
 		"number": "20",
 		"position": "CB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -161,7 +161,7 @@ const players = [
 		"side": "OFF"
 	},
 	{
-		"name": "Ronnie Harrison",
+		"name": "Ronnie Harrison Jr.",
 		"number": "33",
 		"position": "DB",
 		"status": "ACT",
@@ -175,7 +175,7 @@ const players = [
 		"side": "DEF"
 	},
 	{
-		"name": "M.J. Stewart",
+		"name": "M.J. Stewart Jr.",
 		"number": "36",
 		"position": "CB",
 		"status": "ACT",
@@ -217,7 +217,7 @@ const players = [
 		"side": "DEF"
 	},
 	{
-		"name": "John Johnson",
+		"name": "John Johnson III",
 		"number": "43",
 		"position": "S",
 		"status": "ACT",
@@ -322,7 +322,7 @@ const players = [
 		"side": "OFF"
 	},
 	{
-		"name": "James Hudson",
+		"name": "James Hudson III",
 		"number": "66",
 		"position": "OT",
 		"status": "ACT",
@@ -343,17 +343,17 @@ const players = [
 		"side": "OFF"
 	},
 	{
-		"name": "Jedrick Wills",
+		"name": "Jedrick Wills Jr.",
 		"number": "71",
 		"position": "OT",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
 		"name": "Chris Hubbard",
 		"number": "74",
 		"position": "OT",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
@@ -512,9 +512,16 @@ const players = [
 	},
 	{
 		"name": "Ifeadi Odenigbo",
-		"number": "00",
+		"number": "57",
 		"position": "DE",
 		"status": "ACT",
 		"side": "DEF"
 	},
+	{
+		"name": "Hjalte Froholdt",
+		"number": "00",
+		"position": "G",
+		"status": "DEV",
+		"side": "OFF"
+	}
 ]

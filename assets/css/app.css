@@ -126,6 +126,7 @@ footer {
 footer p {
 	color: var(--text-color);
 	font-size: 12px;
+	line-height: 20px;
 	text-align: center;
 }
 
