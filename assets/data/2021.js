@@ -171,7 +171,7 @@ const players = [
 		"name": "Jovante Moffatt",
 		"number": "35",
 		"position": "S",
-		"status": "DEV",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
