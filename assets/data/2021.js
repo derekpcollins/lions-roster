@@ -115,7 +115,7 @@ const players = [
 		"name": "Nick Chubb",
 		"number": "24",
 		"position": "RB",
-		"status": "ACT",
+		"status": "RES",
 		"side": "OFF"
 	},
 	{
@@ -283,7 +283,7 @@ const players = [
 		"name": "Malcolm Smith",
 		"number": "56",
 		"position": "LB",
-		"status": "ACT",
+		"status": "RES",
 		"side": "DEF"
 	},
 	{
@@ -313,6 +313,13 @@ const players = [
 		"position": "DE",
 		"status": "DEV",
 		"side": "DEF"
+	},
+	{
+		"name": "Alex Taylor",
+		"number": "60",
+		"position": "OT",
+		"status": "ACT",
+		"side": "OFF"
 	},
 	{
 		"name": "Blake Hance",
@@ -521,7 +528,7 @@ const players = [
 		"name": "Hjalte Froholdt",
 		"number": "00",
 		"position": "G",
-		"status": "DEV",
+		"status": "AC",
 		"side": "OFF"
 	}
 ]
