@@ -378,6 +378,13 @@ const players = [
 		"side": "OFF"
 	},
 	{
+		"name": "Hjalte Froholdt",
+		"number": "72",
+		"position": "G",
+		"status": "ACT",
+		"side": "OFF"
+	},
+	{
 		"name": "Chris Hubbard",
 		"number": "74",
 		"position": "OT",
@@ -537,12 +544,5 @@ const players = [
 		"position": "DT",
 		"status": "ACT",
 		"side": "DEF"
-	},
-	{
-		"name": "Hjalte Froholdt",
-		"number": "00",
-		"position": "G",
-		"status": "ACT",
-		"side": "OFF"
 	}
 ]
