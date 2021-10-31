@@ -24,7 +24,7 @@ const players = [
 		"name": "Case Keenum",
 		"number": "5",
 		"position": "QB",
-		"status": "BAK",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
@@ -66,7 +66,7 @@ const players = [
 		"name": "Ryan Switzer",
 		"number": "15",
 		"position": "WR",
-		"status": "RES",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
@@ -87,14 +87,14 @@ const players = [
 		"name": "Greg Newsome II",
 		"number": "20",
 		"position": "CB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
 		"name": "Denzel Ward",
 		"number": "21",
 		"position": "CB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -115,7 +115,7 @@ const players = [
 		"name": "Nick Chubb",
 		"number": "24",
 		"position": "RB",
-		"status": "RES",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
@@ -136,13 +136,20 @@ const players = [
 		"name": "Kareem Hunt",
 		"number": "27",
 		"position": "RB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
 		"name": "Jeremiah Owusu-Koramoah",
 		"number": "28",
 		"position": "LB",
+		"status": "IR",
+		"side": "DEF"
+	},
+	{
+		"name": "Herb Miller",
+		"number": "29",
+		"position": "CB",
 		"status": "ACT",
 		"side": "DEF"
 	},
@@ -157,7 +164,7 @@ const players = [
 		"name": "Andy Janovich",
 		"number": "31",
 		"position": "FB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
@@ -185,7 +192,7 @@ const players = [
 		"name": "M.J. Stewart Jr.",
 		"number": "36",
 		"position": "CB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -213,7 +220,7 @@ const players = [
 		"name": "Montrel Meander",
 		"number": "41",
 		"position": "LB",
-		"status": "RES",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -248,14 +255,14 @@ const players = [
 		"name": "John Kelly",
 		"number": "49",
 		"position": "RB",
-		"status": "DEV",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
 		"name": "Jacob Phillips",
 		"number": "50",
 		"position": "LB",
-		"status": "RES",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -290,7 +297,7 @@ const players = [
 		"name": "Malcolm Smith",
 		"number": "56",
 		"position": "LB",
-		"status": "RES",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -367,7 +374,7 @@ const players = [
 		"name": "Jedrick Wills Jr.",
 		"number": "71",
 		"position": "OT",
-		"status": "IR",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
@@ -402,7 +409,7 @@ const players = [
 		"name": "Drew Forbes",
 		"number": "79",
 		"position": "OG",
-		"status": "RES",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
@@ -465,14 +472,14 @@ const players = [
 		"name": "Stephen Carlson",
 		"number": "89",
 		"position": "TE",
-		"status": "RES",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
 		"name": "Jadeveon Clowney",
 		"number": "90",
 		"position": "DE",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -493,7 +500,7 @@ const players = [
 		"name": "Tommy Togiai",
 		"number": "93",
 		"position": "DT",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -535,7 +542,7 @@ const players = [
 		"name": "Hjalte Froholdt",
 		"number": "00",
 		"position": "G",
-		"status": "AC",
+		"status": "ACT",
 		"side": "OFF"
 	}
 ]
