@@ -444,7 +444,7 @@ const players = [
 		"name": "Ja'Marcus Bradley",
 		"number": "84",
 		"position": "WR",
-		"status": "DEV",
+		"status": "RES",
 		"side": "OFF"
 	},
 	{
@@ -500,7 +500,7 @@ const players = [
 		"name": "Sheldon Day",
 		"number": "92",
 		"position": "DT",
-		"status": "DEV",
+		"status": "RES",
 		"side": "DEF"
 	},
 	{
