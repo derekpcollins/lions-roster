@@ -94,7 +94,7 @@ const players = [
 		"name": "Denzel Ward",
 		"number": "21",
 		"position": "CB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -199,7 +199,7 @@ const players = [
 		"name": "A.J. Green",
 		"number": "38",
 		"position": "CB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -290,7 +290,7 @@ const players = [
 		"name": "Takkarist McKinley",
 		"number": "55",
 		"position": "DE",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -380,8 +380,8 @@ const players = [
 	{
 		"name": "Hjalte Froholdt",
 		"number": "72",
-		"position": "G",
-		"status": "ACT",
+		"position": "OG",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
