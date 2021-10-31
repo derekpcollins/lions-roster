@@ -73,14 +73,14 @@ const players = [
 		"name": "Derrick Willies",
 		"number": "16",
 		"position": "WR",
-		"status": "BAK",
+		"status": "RES",
 		"side": "OFF"
 	},
 	{
 		"name": "JoJo Natson",
 		"number": "19",
 		"position": "WR",
-		"status": "DEV",
+		"status": "RES",
 		"side": "OFF"
 	},
 	{
@@ -185,7 +185,7 @@ const players = [
 		"name": "Jovante Moffatt",
 		"number": "35",
 		"position": "S",
-		"status": "ACT",
+		"status": "RES",
 		"side": "DEF"
 	},
 	{
