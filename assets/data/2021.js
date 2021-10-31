@@ -52,7 +52,7 @@ const players = [
 		"name": "Donovan Peoples-Jones",
 		"number": "11",
 		"position": "PR",
-		"status": "ACT",
+		"status": "IR",
 		"side": "SPT"
 	},
 	{
@@ -94,7 +94,7 @@ const players = [
 		"name": "Denzel Ward",
 		"number": "21",
 		"position": "CB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -164,6 +164,13 @@ const players = [
 		"name": "Ronnie Harrison Jr.",
 		"number": "33",
 		"position": "DB",
+		"status": "ACT",
+		"side": "DEF"
+	},
+	{
+		"name": "Tim Harris",
+		"number": "34",
+		"position": "CB",
 		"status": "ACT",
 		"side": "DEF"
 	},
@@ -402,7 +409,7 @@ const players = [
 		"name": "Jarvis Landry",
 		"number": "80",
 		"position": "WR",
-		"status": "RES",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
