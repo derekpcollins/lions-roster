@@ -56,13 +56,6 @@ const players = [
 		"side": "SPT"
 	},
 	{
-		"name": "Odell Beckham Jr.",
-		"number": "13",
-		"position": "WR",
-		"status": "ACT",
-		"side": "OFF"
-	},
-	{
 		"name": "Ryan Switzer",
 		"number": "15",
 		"position": "WR",
@@ -164,7 +157,7 @@ const players = [
 		"name": "Andy Janovich",
 		"number": "31",
 		"position": "FB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
@@ -409,7 +402,7 @@ const players = [
 		"name": "Jack Conklin",
 		"number": "78",
 		"position": "OT",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
