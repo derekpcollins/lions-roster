@@ -10,12 +10,12 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background-color: #1a1a1a;
-		--card-background-color: rgba(0,0,0,.15);
+		--background-color: #311D00;
+		--card-background-color: rgba(0,0,0,.3);
 		--img-background-color: rgba(0,0,0,.3);
 		--text-color: rgba(255,255,255,.75);
-		--nav-border-color: rgba(255,255,255,.3);
-		--nav-active-color: rgba(255,255,255,.15);
+		--nav-border-color: rgba(0,0,0,.5);
+		--nav-active-color: rgba(0,0,0,.3);
 	}
 }
 
