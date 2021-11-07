@@ -51,9 +51,9 @@ const players = [
 	{
 		"name": "Donovan Peoples-Jones",
 		"number": "11",
-		"position": "PR",
-		"status": "IR",
-		"side": "SPT"
+		"position": "WR",
+		"status": "ACT",
+		"side": "OFF"
 	},
 	{
 		"name": "Ryan Switzer",
@@ -143,7 +143,7 @@ const players = [
 		"name": "Herb Miller",
 		"number": "29",
 		"position": "CB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -331,7 +331,7 @@ const players = [
 	{
 		"name": "Blake Hance",
 		"number": "62",
-		"position": "OG",
+		"position": "OT",
 		"status": "ACT",
 		"side": "OFF"
 	},
@@ -486,7 +486,7 @@ const players = [
 		"name": "Joe Jackson",
 		"number": "91",
 		"position": "DE",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -500,7 +500,7 @@ const players = [
 		"name": "Tommy Togiai",
 		"number": "93",
 		"position": "DT",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -535,7 +535,7 @@ const players = [
 		"name": "Andrew Billings",
 		"number": "99",
 		"position": "DT",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	}
 ]
