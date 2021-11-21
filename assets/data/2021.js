@@ -45,14 +45,14 @@ const players = [
 		"name": "Anthony Schwartz",
 		"number": "10",
 		"position": "WR",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
 		"name": "Donovan Peoples-Jones",
 		"number": "11",
 		"position": "WR",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
@@ -73,7 +73,7 @@ const players = [
 		"name": "JoJo Natson",
 		"number": "19",
 		"position": "WR",
-		"status": "RES",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
@@ -101,7 +101,7 @@ const players = [
 		"name": "Troy Hill",
 		"number": "23",
 		"position": "CB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -136,14 +136,14 @@ const players = [
 		"name": "Jeremiah Owusu-Koramoah",
 		"number": "28",
 		"position": "LB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
 		"name": "Herb Miller",
 		"number": "29",
 		"position": "CB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -185,14 +185,14 @@ const players = [
 		"name": "M.J. Stewart Jr.",
 		"number": "36",
 		"position": "CB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
 		"name": "A.J. Green",
 		"number": "38",
 		"position": "CB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -205,8 +205,8 @@ const players = [
 	{
 		"name": "Johnny Stanton",
 		"number": "40",
-		"position": "RB",
-		"status": "BAK",
+		"position": "FB",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
@@ -220,7 +220,7 @@ const players = [
 		"name": "Tony Fields II",
 		"number": "42",
 		"position": "LB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -245,10 +245,17 @@ const players = [
 		"side": "SPT"
 	},
 	{
+		"name": "Brian Hill",
+		"number": "48",
+		"position": "RB",
+		"status": "ACT",
+		"side": "OFF"
+	},
+	{
 		"name": "John Kelly",
 		"number": "49",
 		"position": "RB",
-		"status": "ACT",
+		"status": "WAV",
 		"side": "OFF"
 	},
 	{
@@ -297,7 +304,7 @@ const players = [
 		"name": "Ifeadi Odenigbo",
 		"number": "57",
 		"position": "DE",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -374,7 +381,7 @@ const players = [
 		"name": "Hjalte Froholdt",
 		"number": "72",
 		"position": "OG",
-		"status": "IR",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
@@ -434,10 +441,17 @@ const players = [
 		"side": "OFF"
 	},
 	{
+		"name": "Lawrence Cager",
+		"number": "83",
+		"position": "WR",
+		"status": "ACT",
+		"side": "OFF"
+	},
+	{
 		"name": "Ja'Marcus Bradley",
 		"number": "84",
 		"position": "WR",
-		"status": "RES",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
@@ -493,7 +507,7 @@ const players = [
 		"name": "Sheldon Day",
 		"number": "92",
 		"position": "DT",
-		"status": "RES",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -507,7 +521,7 @@ const players = [
 		"name": "Porter Gustin",
 		"number": "94",
 		"position": "DE",
-		"status": "DEV",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -535,7 +549,7 @@ const players = [
 		"name": "Andrew Billings",
 		"number": "99",
 		"position": "DT",
-		"status": "IR",
+		"status": "WAV",
 		"side": "DEF"
 	}
 ]
