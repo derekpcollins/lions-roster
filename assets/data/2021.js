@@ -52,7 +52,7 @@ const players = [
 		"name": "Donovan Peoples-Jones",
 		"number": "11",
 		"position": "WR",
-		"status": "IR",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
@@ -101,7 +101,7 @@ const players = [
 		"name": "Troy Hill",
 		"number": "23",
 		"position": "CB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -129,7 +129,7 @@ const players = [
 		"name": "Kareem Hunt",
 		"number": "27",
 		"position": "RB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
@@ -409,7 +409,7 @@ const players = [
 		"name": "Jack Conklin",
 		"number": "78",
 		"position": "OT",
-		"status": "IR",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
