@@ -437,7 +437,7 @@ const players = [
 		"name": "Rashard Higgins",
 		"number": "82",
 		"position": "WR",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
