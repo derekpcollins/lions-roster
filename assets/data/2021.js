@@ -87,7 +87,7 @@ const players = [
 		"name": "Denzel Ward",
 		"number": "21",
 		"position": "CB",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -283,7 +283,7 @@ const players = [
 		"name": "Nick Harris",
 		"number": "53",
 		"position": "C",
-		"status": "IR",
+		"status": "ACT",
 		"side": "OFF"
 	},
 	{
@@ -304,7 +304,7 @@ const players = [
 		"name": "Ifeadi Odenigbo",
 		"number": "57",
 		"position": "DE",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -507,7 +507,7 @@ const players = [
 		"name": "Sheldon Day",
 		"number": "92",
 		"position": "DT",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -542,7 +542,7 @@ const players = [
 		"name": "Malik Jackson",
 		"number": "97",
 		"position": "DT",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
