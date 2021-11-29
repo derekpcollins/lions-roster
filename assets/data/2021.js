@@ -143,7 +143,7 @@ const players = [
 		"name": "Herb Miller",
 		"number": "29",
 		"position": "CB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -171,7 +171,7 @@ const players = [
 		"name": "Tim Harris",
 		"number": "34",
 		"position": "CB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
@@ -206,7 +206,7 @@ const players = [
 		"name": "Johnny Stanton",
 		"number": "40",
 		"position": "FB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
@@ -248,14 +248,14 @@ const players = [
 		"name": "Brian Hill",
 		"number": "48",
 		"position": "RB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
 		"name": "John Kelly",
 		"number": "49",
 		"position": "RB",
-		"status": "WAV",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
@@ -283,14 +283,14 @@ const players = [
 		"name": "Nick Harris",
 		"number": "53",
 		"position": "C",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
 		"name": "Takkarist McKinley",
 		"number": "55",
 		"position": "DE",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -304,7 +304,7 @@ const players = [
 		"name": "Ifeadi Odenigbo",
 		"number": "57",
 		"position": "DE",
-		"status": "IR",
+		"status": "ACT",
 		"side": "DEF"
 	},
 	{
@@ -332,7 +332,7 @@ const players = [
 		"name": "Alex Taylor",
 		"number": "60",
 		"position": "OT",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
@@ -381,7 +381,7 @@ const players = [
 		"name": "Hjalte Froholdt",
 		"number": "72",
 		"position": "OG",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
@@ -444,7 +444,7 @@ const players = [
 		"name": "Lawrence Cager",
 		"number": "83",
 		"position": "WR",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
@@ -542,7 +542,7 @@ const players = [
 		"name": "Malik Jackson",
 		"number": "97",
 		"position": "DT",
-		"status": "ACT",
+		"status": "IR",
 		"side": "DEF"
 	},
 	{
