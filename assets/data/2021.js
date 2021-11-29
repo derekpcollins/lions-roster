@@ -157,7 +157,7 @@ const players = [
 		"name": "Andy Janovich",
 		"number": "31",
 		"position": "FB",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
@@ -353,7 +353,7 @@ const players = [
 		"name": "James Hudson III",
 		"number": "66",
 		"position": "OT",
-		"status": "ACT",
+		"status": "IR",
 		"side": "OFF"
 	},
 	{
