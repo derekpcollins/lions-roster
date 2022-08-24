@@ -6,7 +6,7 @@ const fetch = require("node-fetch");
 let download = async (url, name) => {
   const response = await fetch(url);
   const buffer = await response.buffer();
-  fs.writeFile(`assets/img/players-dl/${name}.jpg`, buffer, () =>
+  fs.writeFile(`assets/img/players/${name}.png`, buffer, () =>
     console.log(`Downloaded image for ${name}`)
   );
 };

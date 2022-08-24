@@ -1,41 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	
-	<title>Browns Roster</title>
-	<meta name="description" content="The Cleveland Browns roster.">
-	<meta name="author" content="Derek P. Collins">
-	
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="viewport" content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<link rel="apple-touch-icon" href="assets/img/app-icon.png">
+  <head>
+    <meta charset="utf-8" />
 
-	<link rel="stylesheet" href="assets/css/app.css?v=1.1">
+    <title>Browns Roster</title>
+    <meta name="description" content="The Cleveland Browns roster." />
+    <meta name="author" content="Derek P. Collins" />
 
-</head>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-<body>
-	<div id="site-container">
-		<header>
-			<nav>
-				<ul id="options-list">
-					<li data-side="OFF" class="active">Offense</li>
-					<li data-side="DEF">Defense</li>
-					<li data-side="SPT">Special Teams</li>
-				</ul>
-			</nav>
-		</header>
-		<main id="roster-container"></main>
-		<footer>
-			<p>Made by <a href="https://derekpcollins.com">Derek P. Collins</a>.<br />Last updated: 11/28/2021 at 7:56 PM EST</p>
-		</footer>
-	</div>
-	
-	<script src="assets/data/2021.js"></script>
-	<script src="assets/js/app.js"></script>
-</body>
+    <link rel="apple-touch-icon" href="assets/img/app-icon.png" />
+
+    <link rel="stylesheet" href="assets/css/app.css?v=1.1" />
+  </head>
+
+  <body>
+    <div id="site-container">
+      <ul id="players-list"></ul>
+      <footer>
+        <p>
+          Made by
+          <a href="https://derekpcollins.com">Derek P. Collins</a>.<br />Last
+          updated: 11/28/2021 at 7:56 PM EST
+        </p>
+      </footer>
+    </div>
+
+    <!-- PLAYER CARD TEMPLATE -->
+    <template id="player-card-template">
+      <span class="number"></span>
+      <span class="position"></span>
+      <span class="name"></span>
+      <img class="photo" loading="lazy" src="" height="80" width="80" />
+    </template>
+
+    <script src="assets/data/2021.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>

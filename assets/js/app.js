@@ -1,63 +1,44 @@
-const container = document.getElementById('roster-container');
+const container = document.getElementById("roster-container");
 
-const createCard = (data) => {
-	
-	let card = document.createElement('div');
-	card.classList.add('card');
-	
-	let number = document.createElement('span');
-	number.classList.add('number');
-	number.innerHTML = data.number;
-	card.appendChild(number);
-	
-	let position = document.createElement('span');
-	position.classList.add('position');
-	position.innerHTML = data.position;
-	card.appendChild(position);
-	
-	let name = document.createElement('span');
-	name.classList.add('name');
-	name.innerHTML = data.name;
-	card.appendChild(name);
-	
-	let imageName = (data.name).split(' ').join('-');
-	let image = document.createElement('img');
-	image.setAttribute('loading', 'lazy');
-	image.src = 'assets/img/players/' + imageName + '.png';
-	image.height = 80;
-	image.width = 80;
-	card.appendChild(image);
-	
-	return card;
-}
+const cloneTemplate = (id) => {
+  // Get the correct device template
+  const template = document.getElementById(id);
 
-const showRoster = (obj) => {
-	container.innerHTML = '';
-	// Loop over the players array
-	// See data/2021.js
-	for(const player of players) {
-		let card;
-		if(player.status === obj.status && player.side === obj.side) {
-			card = createCard(player);
-			container.appendChild(card);
-		}
-	}
-}
+  // Clone the template content
+  const clone = template.content.cloneNode(true);
 
-// Handle clicks on nav
-const optionsList = document.getElementById('options-list');
-optionsList.addEventListener('click', (event) => {
-	const side = event.target.getAttribute('data-side');
-	showRoster({status: 'ACT', side: side.toString()});
-	
-	// Remove currently active class
-	const currentActive = optionsList.getElementsByClassName('active')[0];
-	currentActive.classList.remove('active');
-	
-	// Add new active class
-	const newActive = event.target.classList.add('active');
-});
+  return clone;
+};
 
+const createPlayersList = (data) => {
+  const playersListEl = document.getElementById("players-list");
+  // Add ballparks to the page
+  data.forEach(function (player) {
+    const playerCardTemplate = cloneTemplate("player-card-template");
 
-// Initial load
-showRoster({status: 'ACT', side: 'OFF'});
+    const playerNameForImgSrc = player.name
+      .replaceAll(" ", "-")
+      //.replaceAll(".", "")
+      .toLowerCase();
+
+    // Populate the element
+    playerCardTemplate.querySelector(".number").innerText = player.number;
+    playerCardTemplate.querySelector(".position").innerText = player.position;
+    playerCardTemplate.querySelector(".name").innerText = player.name;
+
+    playerCardTemplate.querySelector(".photo").src =
+      "../assets/img/players/" + playerNameForImgSrc + ".png";
+    playerCardTemplate.querySelector(".photo").alt = player.name + " logo";
+    playerCardTemplate.querySelector(".photo").title = player.name;
+
+    // create the list item element and append it all to the document
+    const playerListItem = document.createElement("li");
+
+    playerListItem.appendChild(playerCardTemplate);
+    playersListEl.appendChild(playerListItem);
+  });
+};
+
+fetch("./assets/data/players.json")
+  .then((response) => response.json())
+  .then((json) => createPlayersList(json));

@@ -1,135 +1,123 @@
 :root {
-	color-scheme: light dark;
-	--background-color: green;
-	--card-background-color: rgba(255,255,255,.25);
-	--img-background-color: rgba(255,255,255,.15);
-	--text-color: rgba(255,255,255,.9);
-	--nav-border-color: rgba(255,255,255,.3);
-	--nav-active-color: rgba(255,255,255,.15);
+  color-scheme: light dark;
+  --background-color: green;
+  --card-background-color: rgba(255, 255, 255, 0.25);
+  --img-background-color: rgba(255, 255, 255, 0.15);
+  --text-color: rgba(255, 255, 255, 0.9);
+  --nav-border-color: rgba(255, 255, 255, 0.3);
+  --nav-active-color: rgba(255, 255, 255, 0.15);
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--background-color: #311D00;
-		--card-background-color: rgba(0,0,0,.3);
-		--img-background-color: rgba(0,0,0,.3);
-		--text-color: rgba(255,255,255,.75);
-		--nav-border-color: rgba(0,0,0,.5);
-		--nav-active-color: rgba(0,0,0,.3);
-	}
+  :root {
+    --background-color: #311d00;
+    --card-background-color: rgba(0, 0, 0, 0.3);
+    --img-background-color: rgba(0, 0, 0, 0.3);
+    --text-color: rgba(255, 255, 255, 0.75);
+    --nav-border-color: rgba(0, 0, 0, 0.5);
+    --nav-active-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 html,
 body {
-	margin: 0;
-	height: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 body {
-	background-image: url(data:image/png;base64,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);
-	background-color: var(--background-color);
-	font-size: 100%;
-	font-family: -apple-system, 'Inter', sans-serif;
-	margin: 0;
-	padding: 0;
-	user-select: none;
-	height: 100%;
-	color: var(--text-color);
+  background-image: url(data:image/png;base64,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);
+  background-color: var(--background-color);
+  font-size: 100%;
+  font-family: -apple-system, "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  height: 100%;
+  color: var(--text-color);
 }
 
 #site-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100vw;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
-header {
-	padding: 48px 0 0 0;
-	position: sticky;
-	top: 0;
+#players-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0 0 48px 0;
 }
 
-#options-list {
-	display: flex;
-	flex-direction: row;
-	list-style: none;
-	margin: 0 8px;
-	padding: 0;
-	border: 1px solid var(--nav-border-color);
-	border-radius: 4px;
-	overflow: hidden;
-	backdrop-filter: blur(8px);
-	-webkit-backdrop-filter: blur(8px);
+#players-list li {
+  background-color: var(--card-background-color);
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
-#options-list li {
-	flex: 1;
-	padding: 4px;
-	font-size: 14px;
-	text-align: center;
-	border-left: 1px solid var(--nav-border-color);
+#players-list li > span {
+  display: flex;
+  align-items: center;
 }
 
-#options-list li:first-of-type {
-	border-left: 0;
+#players-list li .name {
+  flex: 1;
+  margin: 0 16px;
 }
 
-#options-list .active {
-	background-color: var(--nav-active-color);
+#players-list li .number,
+#players-list li .position {
+  font-weight: bold;
+  font-size: 24px;
+  justify-content: center;
+  width: 48px;
 }
 
-#roster-container {
-	padding: 16px 0;
-}
-
-.card {
-	background-color: var(--card-background-color);
-	display: flex;
-	flex-direction: row;
-	margin: 8px;
-	border-radius: 8px;
-	overflow: hidden;
-}
-
-.card > span {
-	display: flex;
-	align-items: center;
-}
-
-.card .name {
-	flex: 1;
-	margin: 0 16px;
-}
-
-.card .number,
-.card .position {
-	font-weight: bold;
-	font-size: 24px;
-	justify-content: center;
-	width: 48px;
-}
-
-.card img {
-	background-color: var(--img-background-color);
-	display: block;
+#players-list li img {
+  background-color: var(--img-background-color);
+  display: block;
 }
 
 footer {
-	padding: 0 0 40px 0;
+  padding: 0 0 40px 0;
 }
 
 footer p {
-	color: var(--text-color);
-	font-size: 12px;
-	line-height: 20px;
-	text-align: center;
+  color: var(--text-color);
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
 }
 
 footer p a {
-	color: var(--text-color);
+  color: var(--text-color);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #ballparks-list {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  #ballparks-list li {
+    width: 100%;
+    margin: 8px 0;
+  }
 }
