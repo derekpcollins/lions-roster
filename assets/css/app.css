@@ -6,6 +6,22 @@
   --text-color: rgba(255, 255, 255, 0.9);
   --nav-border-color: rgba(255, 255, 255, 0.3);
   --nav-active-color: rgba(255, 255, 255, 0.15);
+  --shadow-color: 92deg 65% 18%;
+  --shadow-elevation-low: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.41),
+    0px 0.6px 0.6px -1.8px hsl(var(--shadow-color) / 0.33),
+    0px 1.6px 1.5px -3.5px hsl(var(--shadow-color) / 0.25);
+  --shadow-elevation-medium: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.43),
+    0px 1.1px 1.1px -1.2px hsl(var(--shadow-color) / 0.36),
+    0px 3px 2.9px -2.4px hsl(var(--shadow-color) / 0.3),
+    -0.1px 7.9px 7.6px -3.5px hsl(var(--shadow-color) / 0.24);
+  --shadow-elevation-high: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.4),
+    0px 1.5px 1.5px -0.5px hsl(var(--shadow-color) / 0.37),
+    0px 2.9px 2.8px -1px hsl(var(--shadow-color) / 0.34),
+    0px 5.2px 5px -1.5px hsl(var(--shadow-color) / 0.31),
+    -0.1px 9px 8.7px -2px hsl(var(--shadow-color) / 0.28),
+    -0.1px 15.1px 14.6px -2.5px hsl(var(--shadow-color) / 0.25),
+    -0.2px 23.9px 23.1px -3px hsl(var(--shadow-color) / 0.22),
+    -0.3px 36.2px 35px -3.5px hsl(var(--shadow-color) / 0.19);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +32,22 @@
     --text-color: rgba(255, 255, 255, 0.75);
     --nav-border-color: rgba(0, 0, 0, 0.5);
     --nav-active-color: rgba(0, 0, 0, 0.3);
+    --shadow-color: 34deg 100% 3%;
+    --shadow-elevation-low: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.41),
+      0px 0.6px 0.6px -1.8px hsl(var(--shadow-color) / 0.33),
+      0px 1.6px 1.5px -3.5px hsl(var(--shadow-color) / 0.25);
+    --shadow-elevation-medium: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.43),
+      0px 1.1px 1.1px -1.2px hsl(var(--shadow-color) / 0.36),
+      0px 3px 2.9px -2.4px hsl(var(--shadow-color) / 0.3),
+      -0.1px 7.9px 7.6px -3.5px hsl(var(--shadow-color) / 0.24);
+    --shadow-elevation-high: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.4),
+      0px 1.5px 1.5px -0.5px hsl(var(--shadow-color) / 0.37),
+      0px 2.9px 2.8px -1px hsl(var(--shadow-color) / 0.34),
+      0px 5.2px 5px -1.5px hsl(var(--shadow-color) / 0.31),
+      -0.1px 9px 8.7px -2px hsl(var(--shadow-color) / 0.28),
+      -0.1px 15.1px 14.6px -2.5px hsl(var(--shadow-color) / 0.25),
+      -0.2px 23.9px 23.1px -3px hsl(var(--shadow-color) / 0.22),
+      -0.3px 36.2px 35px -3.5px hsl(var(--shadow-color) / 0.19);
   }
 }
 
@@ -48,13 +80,24 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+}
+
+header > svg {
+  height: 140px;
+}
+
 #players-list {
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 95%;
-  margin: 80px auto 0;
+  margin: 8px auto 0;
   justify-content: center;
   padding: 0 0 48px 0;
 }
@@ -64,12 +107,15 @@ body {
   display: flex;
   flex-direction: row;
   margin: 8px;
-  border-radius: 8px;
+  border-radius: 6px;
   text-align: center;
   width: 360px;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-elevation-medium);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 #players-list li > span {
@@ -79,7 +125,8 @@ body {
 
 #players-list li .name {
   flex: 1;
-  margin: 0 16px;
+  margin: 0 8px 0 16px;
+  text-align: left;
 }
 
 #players-list li .number,
@@ -87,6 +134,14 @@ body {
   font-weight: bold;
   font-size: 24px;
   justify-content: center;
+}
+
+#players-list li .position {
+  width: 56px;
+}
+
+#players-list li .number {
+  background-color: var(--card-background-color);
   width: 48px;
 }
 
@@ -118,6 +173,6 @@ footer p a {
 
   #players-list li {
     width: 100%;
-    margin: 8px 0;
+    margin: 6px 0;
   }
 }

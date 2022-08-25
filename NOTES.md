@@ -47,3 +47,7 @@ const sortedData = data.sort(
   (a, b) => parseFloat(a.number) - parseFloat(b.number)
 );
 ```
+
+## Shadows
+
+The shadows for the cards were generated using the [Shadow Palette Generator](https://www.joshwcomeau.com/shadow-palette/).
