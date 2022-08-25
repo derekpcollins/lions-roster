@@ -14,7 +14,7 @@ I was able to successfully set up Github Actions to automatically run scraper.js
 
 First, I followed the instructions in [Automate Your Workflow with GitHub Actions and Cron](https://towardsdatascience.com/automate-workflow-github-actions-cron-130a8bf68ca6) for the general setup.
 
-I got the following error: "The `npm ci` command can only install with an existing package-lock.json or", which I first tried to resolve by using `npm install` instead of `npm ci`, however, I found that I first needed to checkout my code (I'm still not sure exactly why I needed this step) by following the instructions [here](https://stackoverflow.com/questions/68607702/npm-install-falied-in-github-action).
+When I checked the status of the action on Github, I got the following error: "The `npm ci` command can only install with an existing package-lock.json or", which I first tried to resolve by using `npm install` instead of `npm ci`, however, I found that I first needed to checkout my code (I'm still not sure exactly why I needed this step) by following the instructions [here](https://stackoverflow.com/questions/68607702/npm-install-falied-in-github-action).
 
 Also, in order to test that the action was working correctly, I set it so that the action would run when I pushed to the `scraper` branch:
 
