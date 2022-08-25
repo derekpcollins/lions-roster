@@ -22,7 +22,7 @@ const createPlayersList = (data) => {
   sortedData.forEach(function (player) {
     const playerCardTemplate = cloneTemplate("player-card-template");
 
-    const playerNameForImgSrc = player.name.replaceAll(" ", "-").toLowerCase();
+    const playerNameForImgSrc = player.name.replaceAll(" ", "-");
 
     // Populate the element
     playerCardTemplate.querySelector(".number").innerText = player.number;
