@@ -25,6 +25,8 @@ on:
       - scraper
 ```
 
+As an aside: check out [Crontab Guru](cron schedule expressions) for creating cron schedule expressions.
+
 ## To do
 
 - [ ] Sort array by player "number"
