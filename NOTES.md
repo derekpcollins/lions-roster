@@ -10,6 +10,6 @@ I need to look into adding some type of automated job (cron job?) to run the scr
 
 ## To do
 
-- [] Sort array by player "number"
-- [] Set up automation to run scraper.js
-- [] Add ability to sort by Offense, Defense, and Special Teams
+- [ ] Sort array by player "number"
+- [ ] Set up automation to run scraper.js
+- [ ] Add ability to sort by Offense, Defense, and Special Teams
