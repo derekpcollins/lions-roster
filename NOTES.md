@@ -21,8 +21,8 @@ Also, in order to test that the action was working correctly, I set it so that t
 ```
 on:
   push:
-	  branches:
-		  - scraper
+    branches:
+      - scraper
 ```
 
 ## To do
