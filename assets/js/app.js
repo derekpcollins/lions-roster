@@ -30,7 +30,7 @@ const createPlayersList = (data) => {
     playerCardTemplate.querySelector(".name").innerText = player.name;
 
     playerCardTemplate.querySelector(".photo").src =
-      "../assets/img/players/" + playerNameForImgSrc + ".jpg";
+      "assets/img/players/" + playerNameForImgSrc + ".jpg";
     playerCardTemplate.querySelector(".photo").alt = player.name + " photo";
     playerCardTemplate.querySelector(".photo").title = player.name;
 
