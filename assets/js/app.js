@@ -16,10 +16,7 @@ const createPlayersList = (data) => {
   data.forEach(function (player) {
     const playerCardTemplate = cloneTemplate("player-card-template");
 
-    const playerNameForImgSrc = player.name
-      .replaceAll(" ", "-")
-      //.replaceAll(".", "")
-      .toLowerCase();
+    const playerNameForImgSrc = player.name.replaceAll(" ", "-").toLowerCase();
 
     // Populate the element
     playerCardTemplate.querySelector(".number").innerText = player.number;
@@ -27,8 +24,8 @@ const createPlayersList = (data) => {
     playerCardTemplate.querySelector(".name").innerText = player.name;
 
     playerCardTemplate.querySelector(".photo").src =
-      "../assets/img/players/" + playerNameForImgSrc + ".png";
-    playerCardTemplate.querySelector(".photo").alt = player.name + " logo";
+      "../assets/img/players/" + playerNameForImgSrc + ".jpg";
+    playerCardTemplate.querySelector(".photo").alt = player.name + " photo";
     playerCardTemplate.querySelector(".photo").title = player.name;
 
     // create the list item element and append it all to the document
@@ -42,3 +39,17 @@ const createPlayersList = (data) => {
 fetch("./assets/data/players.json")
   .then((response) => response.json())
   .then((json) => createPlayersList(json));
+
+fetch("./assets/data/last-updated.txt")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("HTTP error " + response.status);
+    }
+    return response.text();
+  })
+  .then((text) => {
+    document.getElementById("last-updated").innerHTML = text;
+  })
+  .catch((error) => {
+    // Handle/report error
+  });
