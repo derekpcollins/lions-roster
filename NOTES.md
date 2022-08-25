@@ -1,5 +1,14 @@
 # Notes
 
+## To do
+
+- [x] Sort array by player "number"
+- [x] Set up automation to run scraper.js
+- [ ] Add ability to sort by Offense, Defense, and Special Teams
+- [ ] Add better error checking to `app.js`
+
+---
+
 ## Setting up an automated cron job using Github Actions
 
 I need to look into adding some type of automated job (cron job?) to run the scraper.js script on a regular interval (weekly?). I could just run an Amazon S3 server and set up a cron job, but I'd like to look into using something like Github Actions. Here are some resources to get started:
@@ -38,10 +47,3 @@ const sortedData = data.sort(
   (a, b) => parseFloat(a.number) - parseFloat(b.number)
 );
 ```
-
-## To do
-
-- [x] Sort array by player "number"
-- [x] Set up automation to run scraper.js
-- [ ] Add ability to sort by Offense, Defense, and Special Teams
-- [ ] Add better error checking to `app.js`
