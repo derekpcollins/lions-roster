@@ -11,9 +11,15 @@ const cloneTemplate = (id) => {
 };
 
 const createPlayersList = (data) => {
+  // Sort the player data by jersey number
+  // Source: https://stackoverflow.com/questions/979256/sorting-an-array-of-objects-by-property-values
+  const sortedData = data.sort(
+    (a, b) => parseFloat(a.number) - parseFloat(b.number)
+  );
+
   const playersListEl = document.getElementById("players-list");
   // Add ballparks to the page
-  data.forEach(function (player) {
+  sortedData.forEach(function (player) {
     const playerCardTemplate = cloneTemplate("player-card-template");
 
     const playerNameForImgSrc = player.name.replaceAll(" ", "-").toLowerCase();

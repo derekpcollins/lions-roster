@@ -27,6 +27,18 @@ on:
 
 As an aside: check out [Crontab Guru](cron schedule expressions) for creating cron schedule expressions.
 
+## Sorting the player data by jersey number
+
+I found a way to do this within [Sorting an array of objects by property values](https://stackoverflow.com/questions/979256/sorting-an-array-of-objects-by-property-values).
+
+I was able to do the following:
+
+```
+const sortedData = data.sort(
+  (a, b) => parseFloat(a.number) - parseFloat(b.number)
+);
+```
+
 ## To do
 
 - [ ] Sort array by player "number"
