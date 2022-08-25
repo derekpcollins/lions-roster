@@ -42,11 +42,11 @@ const createPlayersList = (data) => {
   });
 };
 
-fetch("../assets/data/players.json")
+fetch("assets/data/players.json")
   .then((response) => response.json())
   .then((json) => createPlayersList(json));
 
-fetch("../assets/data/last-updated.txt")
+fetch("assets/data/last-updated.txt")
   .then((response) => {
     if (!response.ok) {
       throw new Error("HTTP error " + response.status);
