@@ -16,6 +16,15 @@ First, I followed the instructions in [Automate Your Workflow with GitHub Action
 
 I got the following error: "The `npm ci` command can only install with an existing package-lock.json or", which I first tried to resolve by using `npm install` instead of `npm ci`, however, I found that I first needed to checkout my code (I'm still not sure exactly why I needed this step) by following the instructions [here](https://stackoverflow.com/questions/68607702/npm-install-falied-in-github-action).
 
+Also, in order to test that the action was working correctly, I set it so that the action would run when I pushed to the `scraper` branch:
+
+```
+on:
+  push:
+	  branches:
+		  - scraper
+```
+
 ## To do
 
 - [ ] Sort array by player "number"
