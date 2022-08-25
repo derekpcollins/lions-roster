@@ -30,3 +30,4 @@ on:
 - [ ] Sort array by player "number"
 - [x] Set up automation to run scraper.js
 - [ ] Add ability to sort by Offense, Defense, and Special Teams
+- [ ] Add better error checking to `app.js`
