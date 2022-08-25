@@ -137,7 +137,8 @@ header > svg {
 }
 
 #players-list li .position {
-  width: 56px;
+  margin-right: 8px;
+  width: 48px;
 }
 
 #players-list li .number {
