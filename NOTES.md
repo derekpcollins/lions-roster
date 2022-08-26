@@ -53,3 +53,10 @@ const sortedData = data.sort(
 ## Shadows
 
 The shadows for the cards were generated using the [Shadow Palette Generator](https://www.joshwcomeau.com/shadow-palette/).
+
+## Launch Screen Image
+
+I consulted two sites to get this right. Apple gives you the absolute basics in their guide to [Configuring Web Applications](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html), but it turns out there's a bit more to it, which I learned from the following:
+
+- [Adding Custom iOS Splash Screens To Your Progressive Web App](https://medium.com/appscope/adding-custom-ios-splash-screens-to-your-progressive-web-app-41a9b18bdca3)
+- [Enabling iOS Splash Screens for Progressive Web Apps](https://blog.expo.dev/enabling-ios-splash-screens-for-progressive-web-apps-34f06f096e5c)
