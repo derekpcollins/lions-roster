@@ -5,6 +5,7 @@
 - [x] Sort array by player "number"
 - [x] Set up automation to run scraper.js
 - [ ] Add better error checking to `app.js`
+- [ ] Add a launch screen image
 - [ ] Add ability to sort by Offense, Defense, and Special Teams (?)
 - [ ] Add additional player info and expose on tap (?)
 - [ ] Add standings for the AFC North to the bottom (?)
