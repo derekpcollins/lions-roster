@@ -2,6 +2,8 @@
 
 A mobile web app that displays the current Cleveland Browns roster ordered by jersey number.
 
+The data is pulled daily from the [Cleveland Browns Team Roster](https://www.clevelandbrowns.com/team/standings/).
+
 ## How to add the app on iOS
 
 You can simply visit https://derekpcollins.github.io/browns-roster/ in Safari, but if you'd like to add it as an "app" to your home screen, visit the same website and follow the instructions below:
