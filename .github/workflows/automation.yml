@@ -3,7 +3,7 @@ name: Scrape Browns Roster Automation
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
     - cron: "0 3 * * *" # Runs at 03:00 AM (UTC) every day (Check https://crontab.guru/)
 
