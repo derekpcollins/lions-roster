@@ -33,4 +33,4 @@ jobs:
           # Stage the file, commit and push
           git add --all
           git commit -m "Auto commit"
-          git push origin master
+          git push origin main
