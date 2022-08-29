@@ -39,6 +39,8 @@ on:
 
 As an aside: check out [Crontab Guru](cron schedule expressions) for creating cron schedule expressions.
 
+While the above was working, it wasn't actually committing the files back to my repo (duh!), so I followed the instructions in [Using git commit in GitHub Actions](https://lannonbr.com/blog/2019-12-09-git-commit-in-actions/) to actually commit the resulting files back to my repo. I think this is working, but in my testing so far just `last-updated.txt` has been changed and committed, but I believe this because `players.json` and `/img/players/` isn't actually changing because there are no changes.
+
 ## Sorting the player data by jersey number
 
 I found a way to do this within [Sorting an array of objects by property values](https://stackoverflow.com/questions/979256/sorting-an-array-of-objects-by-property-values).
