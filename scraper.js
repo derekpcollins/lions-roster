@@ -108,8 +108,8 @@ scrape().then((value) => {
   });
   const time = today.toLocaleTimeString();
 
-  /*fs.writeFile("assets/data/last-updated.txt", `${date} at ${time}`, (err) => {
+  fs.writeFile("assets/data/last-updated.txt", `${date} at ${time}`, (err) => {
     if (err) return console.log(err);
     console.log("Saved date to last-updated.txt");
-  });*/
+  });
 });

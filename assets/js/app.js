@@ -18,10 +18,9 @@ const createPlayersList = (data) => {
   );
 
   const playersListEl = document.getElementById("players-list");
-  // Add ballparks to the page
+  // Add player cards to the page
   sortedData.forEach(function (player) {
     const playerCardTemplate = cloneTemplate("player-card-template");
-
     const playerNameForImgSrc = player.name.replaceAll(" ", "-");
 
     // Populate the element
@@ -44,7 +43,10 @@ const createPlayersList = (data) => {
 
 fetch("assets/data/players.json")
   .then((response) => response.json())
-  .then((json) => createPlayersList(json));
+  .then((json) => createPlayersList(json))
+  .catch((error) => {
+    // Handle/report error
+  });
 
 fetch("assets/data/last-updated.txt")
   .then((response) => {
