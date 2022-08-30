@@ -27,12 +27,10 @@ You can simply visit https://derekpcollins.github.io/browns-roster/ in Safari, b
 	<tr>
 		<td>Light Mode</td>
 		<td>Dark Mode</td>
-		<td></td>
 	</tr>
 	<tr>
 		<td><img src="/assets/img/screenshots/light-mode.jpg"></td>
 		<td><img src="/assets/img/screenshots/dark-mode.jpg"></td>
-		<td></td>
 	</tr>
 </table>
 
