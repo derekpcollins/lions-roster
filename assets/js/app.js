@@ -54,6 +54,7 @@ fetch("assets/data/players.json")
   })
   .catch((error) => {
     // Handle/report error
+    console.log("There was an error: " + error);
   });
 
 fetch("assets/data/last-updated.txt")
@@ -68,4 +69,5 @@ fetch("assets/data/last-updated.txt")
   })
   .catch((error) => {
     // Handle/report error
+    console.log("There was an error: " + error);
   });
