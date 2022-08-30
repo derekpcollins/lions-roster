@@ -10,6 +10,11 @@ const cloneTemplate = (id) => {
   return clone;
 };
 
+const getPlayerCount = (data) => {
+  let playerCount = data.length;
+  document.getElementById("player-count").innerHTML = playerCount;
+};
+
 const createPlayersList = (data) => {
   // Sort the player data by jersey number
   // Source: https://stackoverflow.com/questions/979256/sorting-an-array-of-objects-by-property-values
@@ -43,7 +48,10 @@ const createPlayersList = (data) => {
 
 fetch("assets/data/players.json")
   .then((response) => response.json())
-  .then((json) => createPlayersList(json))
+  .then((json) => {
+    createPlayersList(json);
+    getPlayerCount(json);
+  })
   .catch((error) => {
     // Handle/report error
   });
