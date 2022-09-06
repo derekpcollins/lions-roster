@@ -201,6 +201,7 @@ header > svg {
 
 #players-list li .stats {
   margin-top: 2px;
+  overflow: hidden;
 }
 
 #players-list li .stats span {
@@ -235,6 +236,12 @@ header > svg {
 #players-list li img {
   background-color: var(--img-background-color);
   display: block;
+}
+
+#players-list li .college {
+  display: inline-flex;
+  white-space: nowrap;
+  max-width: 90px;
 }
 
 footer {
