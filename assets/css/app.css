@@ -210,7 +210,7 @@ header > svg {
   padding: 2px 0;
 }
 
-#players-list li .stats span:before {
+#players-list li .stats span:after {
   content: "";
   height: 100%;
   width: 1px;
@@ -221,14 +221,14 @@ header > svg {
   );
   position: absolute;
   top: 0;
-  left: -8px;
+  right: -8px;
 }
 
 #players-list li .stats span:first-child {
   margin-left: 0;
 }
 
-#players-list li .stats span:first-child:before {
+#players-list li .stats span:last-child:after {
   display: none;
 }
 
