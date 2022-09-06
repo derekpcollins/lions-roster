@@ -52,7 +52,7 @@ let scrape = async () => {
   await autoScroll(page);
 
   const result = await page.evaluate(() => {
-    let table = document.querySelector("table");
+    let table = document.querySelector("table"); // Just get the first table, which is the "active" roster
     let rows = table.querySelectorAll("tbody tr");
     let data = [];
 
