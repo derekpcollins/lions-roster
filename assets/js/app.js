@@ -15,6 +15,11 @@ const getPlayerCount = (data) => {
   document.getElementById("player-count").innerHTML = playerCount;
 };
 
+const togglePlayerCard = (event) => {
+  const target = event.currentTarget;
+  target.classList.toggle("expand");
+};
+
 const createPlayersList = (data) => {
   // Sort the player data by jersey number
   // Source: https://stackoverflow.com/questions/979256/sorting-an-array-of-objects-by-property-values
@@ -38,8 +43,15 @@ const createPlayersList = (data) => {
     playerCardTemplate.querySelector(".photo").alt = player.name + " photo";
     playerCardTemplate.querySelector(".photo").title = player.name;
 
+    const [feet, inches] = player.height.split("-");
+    playerCardTemplate.querySelector(
+      ".stats"
+    ).innerHTML = `<span>${feet}&apos;${inches}&quot;</span><span>${player.weight} lb</span><span>${player.college}</span>`;
+
     // create the list item element and append it all to the document
     const playerListItem = document.createElement("li");
+
+    playerListItem.addEventListener("click", togglePlayerCard);
 
     playerListItem.appendChild(playerCardTemplate);
     playersListEl.appendChild(playerListItem);

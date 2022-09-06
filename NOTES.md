@@ -9,7 +9,7 @@
 - [ ] Add a loading state before the roster list is populated
 - [ ] Add a launch screen image
 - [ ] Add ability to sort by Offense, Defense, and Special Teams (?)
-- [ ] Add additional player info and expose on tap (?)
+- [x] Add additional player info ~~and expose on tap (?)~~
 - [ ] Add standings for the AFC North to the bottom (?)
 
 ---

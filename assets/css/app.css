@@ -120,32 +120,80 @@ header > svg {
   -webkit-backdrop-filter: blur(8px);
 }
 
-#players-list li > span {
+#players-list li .number-and-position {
+  background-color: var(--card-background-color);
+  width: 48px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-}
-
-#players-list li .name {
-  flex: 1;
-  margin: 0 8px 0 16px;
-  text-align: left;
-}
-
-#players-list li .number,
-#players-list li .position {
-  font-weight: bold;
-  font-size: 24px;
   justify-content: center;
 }
 
-#players-list li .position {
-  margin-right: 8px;
-  width: 48px;
+#players-list li .number-and-position span {
+  font-weight: bold;
+  font-size: 24px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#players-list li .number {
-  background-color: var(--card-background-color);
-  width: 48px;
+#players-list li .number-and-position .number {
+  padding-top: 14px;
+}
+
+#players-list li .number-and-position .position {
+  //border-top: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 18px;
+  width: 100%;
+  padding-bottom: 14px;
+}
+
+#players-list li .name-and-stats {
+  flex: 1;
+  margin: 8px 8px 8px 24px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#players-list li .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#players-list li .stats {
+  margin-top: 2px;
+}
+
+#players-list li .stats span {
+  font-size: 12px;
+  margin: 0 8px;
+  position: relative;
+  padding: 2px 0;
+}
+
+#players-list li .stats span:before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0)
+  );
+  position: absolute;
+  top: 0;
+  left: -8px;
+}
+
+#players-list li .stats span:first-child {
+  margin-left: 0;
+}
+
+#players-list li .stats span:first-child:before {
+  display: none;
 }
 
 #players-list li img {
