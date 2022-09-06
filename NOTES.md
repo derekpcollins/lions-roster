@@ -4,6 +4,7 @@
 
 - [x] Sort array by player "number"
 - [x] Set up automation to run scraper.js
+- [x] Make it so that we're just scraping the active roster
 - [ ] Add better error checking to `app.js`
 - [ ] Add a loading state before the roster list is populated
 - [ ] Add a launch screen image
