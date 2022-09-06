@@ -120,7 +120,18 @@ header > svg {
   -webkit-backdrop-filter: blur(8px);
 }
 
-#players-list li .number-and-position {
+#players-list li .number {
+  background-color: var(--card-background-color);
+  font-weight: bold;
+  font-size: 24px;
+  width: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*#players-list li .number-and-position {
   background-color: var(--card-background-color);
   width: 56px;
   display: flex;
@@ -167,15 +178,20 @@ header > svg {
   align-items: flex-start;
   //background-color: rgba(0, 0, 255, 0.15);
   padding-top: 4px;
-}
+}*/
 
 #players-list li .name-and-stats {
   flex: 1;
-  margin: 8px 8px 8px 24px;
+  //margin: 8px 8px 8px 24px;
+  margin: 8px 8px 8px 16px;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#players-list li .position {
+  font-weight: bold;
 }
 
 #players-list li .name {

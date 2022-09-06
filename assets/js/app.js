@@ -35,7 +35,7 @@ const createPlayersList = (data) => {
 
     // Populate the element
     playerCardTemplate.querySelector(".number").innerText = player.number;
-    playerCardTemplate.querySelector(".position").innerText = player.position;
+    //playerCardTemplate.querySelector(".position").innerText = player.position;
     playerCardTemplate.querySelector(".name").innerText = player.name;
 
     playerCardTemplate.querySelector(".photo").src =
@@ -46,7 +46,7 @@ const createPlayersList = (data) => {
     const [feet, inches] = player.height.split("-");
     playerCardTemplate.querySelector(
       ".stats"
-    ).innerHTML = `<span>${feet}&apos;${inches}&quot;</span><span>${player.weight} lb</span><span>${player.college}</span>`;
+    ).innerHTML = `<span class="position">${player.position}</span><span>${feet}&apos;${inches}&quot;</span><span>${player.weight} lb</span><span>${player.college}</span>`;
 
     // create the list item element and append it all to the document
     const playerListItem = document.createElement("li");
