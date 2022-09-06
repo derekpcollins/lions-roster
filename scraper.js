@@ -52,7 +52,8 @@ let scrape = async () => {
   await autoScroll(page);
 
   const result = await page.evaluate(() => {
-    let rows = document.querySelectorAll("tbody tr");
+    let table = document.querySelector("table");
+    let rows = table.querySelectorAll("tbody tr");
     let data = [];
 
     // Loop over the rows
