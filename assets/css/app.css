@@ -247,7 +247,7 @@ header > svg {
 
 #standings-table {
   width: 95%;
-  max-width: 720px;
+  max-width: 732px;
   margin: 0 auto 48px;
   background-color: var(--card-background-color);
   border-radius: 6px;
