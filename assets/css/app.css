@@ -240,7 +240,7 @@ header > svg {
 #players-list li .college {
   display: inline-flex;
   white-space: nowrap;
-  max-width: 90px;
+  max-width: 60px;
 }
 
 #standings-table {
