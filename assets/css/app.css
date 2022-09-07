@@ -5,7 +5,6 @@
   --img-background-color: rgba(255, 255, 255, 0.15);
   --text-color: rgba(255, 255, 255, 0.9);
   --light-text-color: rgba(255, 255, 255, 0.7);
-  --table-border-color: rgba(255, 255, 255, 0.3);
   --shadow-color: 92deg 65% 18%;
   --shadow-elevation-low: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.41),
     0px 0.6px 0.6px -1.8px hsl(var(--shadow-color) / 0.33),
@@ -31,7 +30,6 @@
     --img-background-color: rgba(0, 0, 0, 0.3);
     --text-color: rgba(255, 255, 255, 0.75);
     --light-text-color: rgba(255, 255, 255, 0.5);
-    --table-border-color: rgba(0, 0, 0, 0.5);
     --shadow-color: 34deg 100% 3%;
     --shadow-elevation-low: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.41),
       0px 0.6px 0.6px -1.8px hsl(var(--shadow-color) / 0.33),
@@ -263,7 +261,6 @@ header > svg {
 #standings-table thead th {
   background-color: var(--card-background-color);
   padding: 8px;
-  border-bottom: 1px solid var(--table-border-color);
 }
 
 #standings-table thead th:first-child {
