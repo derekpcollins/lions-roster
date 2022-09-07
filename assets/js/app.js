@@ -38,10 +38,10 @@ const createPlayersList = (data) => {
     //playerCardTemplate.querySelector(".position").innerText = player.position;
     playerCardTemplate.querySelector(".name").innerText = player.name;
 
-    playerCardTemplate.querySelector(".photo").src =
-      "assets/img/players/" + playerNameForImgSrc + ".jpg";
-    playerCardTemplate.querySelector(".photo").alt = player.name + " photo";
-    playerCardTemplate.querySelector(".photo").title = player.name;
+    const playerImageEl = playerCardTemplate.querySelector(".photo");
+    playerImageEl.src = `assets/img/players/${playerNameForImgSrc}.jpg`;
+    playerImageEl.alt = player.name + " photo";
+    playerImageEl.title = player.name;
 
     const [feet, inches] = player.height.split("-");
     playerCardTemplate.querySelector(
@@ -58,11 +58,43 @@ const createPlayersList = (data) => {
   });
 };
 
+const createStandingsTable = (data) => {
+  const standingsTableEl = document.querySelector("#standings-table tbody");
+
+  data.forEach(function (club) {
+    const clubRowTemplate = cloneTemplate("club-row-template");
+
+    // Populate the element
+    clubRowTemplate.querySelector(".club-name").innerText = club.fullName;
+    clubRowTemplate.querySelector(".wins").innerText = club.wins;
+    clubRowTemplate.querySelector(".losses").innerText = club.losses;
+    clubRowTemplate.querySelector(".ties").innerText = club.ties;
+    clubRowTemplate.querySelector(".percent").innerText = club.percent;
+
+    const clubLogoImageEl = clubRowTemplate.querySelector(".club-logo img");
+    clubLogoImageEl.src = `assets/img/club-logos/${club.shortName.toLowerCase()}.svg`;
+    clubLogoImageEl.alt = club.fullName + " logo";
+    clubLogoImageEl.title = club.fullName;
+
+    standingsTableEl.appendChild(clubRowTemplate);
+  });
+};
+
 fetch("assets/data/players.json")
   .then((response) => response.json())
   .then((json) => {
     createPlayersList(json);
     getPlayerCount(json);
+  })
+  .catch((error) => {
+    // Handle/report error
+    console.log("There was an error: " + error);
+  });
+
+fetch("assets/data/standings.json")
+  .then((response) => response.json())
+  .then((json) => {
+    createStandingsTable(json);
   })
   .catch((error) => {
     // Handle/report error

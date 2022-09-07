@@ -30,6 +30,18 @@
         <img src="assets/img/browns-helmet.png" height="90" width="101" />
       </header>
       <ul id="players-list"></ul>
+      <table id="standings-table">
+        <thead>
+          <tr>
+            <th colspan="2">AFC North</th>
+            <th class="wins-heading">W</th>
+            <th class="losses-heading">L</th>
+            <th class="ties-heading">T</th>
+            <th class="percent-heading">PCT</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
       <footer>
         <p>
           Made by
@@ -48,6 +60,20 @@
         <span class="stats"></span>
       </div>
       <img class="photo" loading="lazy" src="" height="80" width="80" />
+    </template>
+
+    <!-- CLUB ROW TEMPLATE -->
+    <template id="club-row-template">
+      <tr>
+        <th class="club-logo">
+          <img loading="lazy" src="" height="24" width="24" />
+        </th>
+        <th class="club-name"></th>
+        <td class="wins"></td>
+        <td class="losses"></td>
+        <td class="ties"></td>
+        <td class="percent"></td>
+      </tr>
     </template>
 
     <script src="assets/js/app.js"></script>

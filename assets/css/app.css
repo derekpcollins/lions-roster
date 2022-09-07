@@ -5,8 +5,7 @@
   --img-background-color: rgba(255, 255, 255, 0.15);
   --text-color: rgba(255, 255, 255, 0.9);
   --light-text-color: rgba(255, 255, 255, 0.7);
-  --nav-border-color: rgba(255, 255, 255, 0.3);
-  --nav-active-color: rgba(255, 255, 255, 0.15);
+  --table-border-color: rgba(255, 255, 255, 0.3);
   --shadow-color: 92deg 65% 18%;
   --shadow-elevation-low: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.41),
     0px 0.6px 0.6px -1.8px hsl(var(--shadow-color) / 0.33),
@@ -32,8 +31,7 @@
     --img-background-color: rgba(0, 0, 0, 0.3);
     --text-color: rgba(255, 255, 255, 0.75);
     --light-text-color: rgba(255, 255, 255, 0.5);
-    --nav-border-color: rgba(0, 0, 0, 0.5);
-    --nav-active-color: rgba(0, 0, 0, 0.3);
+    --table-border-color: rgba(0, 0, 0, 0.5);
     --shadow-color: 34deg 100% 3%;
     --shadow-elevation-low: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.41),
       0px 0.6px 0.6px -1.8px hsl(var(--shadow-color) / 0.33),
@@ -103,7 +101,8 @@ header > svg {
   width: 95%;
   margin: 24px auto 0;
   justify-content: center;
-  padding: 0 0 48px 0;
+  //padding: 0 0 48px 0;
+  padding: 0 0 24px 0;
 }
 
 #players-list li {
@@ -246,6 +245,57 @@ header > svg {
   max-width: 90px;
 }
 
+#standings-table {
+  width: 95%;
+  max-width: 720px;
+  margin: 0 auto 48px;
+  background-color: var(--card-background-color);
+  border-radius: 6px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: var(--shadow-elevation-medium);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#standings-table thead th {
+  background-color: var(--card-background-color);
+  padding: 8px;
+  border-bottom: 1px solid var(--table-border-color);
+}
+
+#standings-table thead th:first-child {
+  text-align: left;
+}
+
+#standings-table thead .wins-heading,
+#standings-table thead .losses-heading,
+#standings-table thead .ties-heading {
+  width: 24px;
+}
+
+#standings-table tbody th {
+  text-align: left;
+  font-weight: normal;
+  padding: 2px 8px;
+}
+
+#standings-table tbody td {
+  text-align: center;
+  padding: 2px 8px;
+}
+
+#standings-table tbody .club-name {
+  padding-left: 8px;
+}
+
+#standings-table tbody .club-logo {
+  padding-right: 0;
+  width: 24px;
+}
+
 footer {
   padding: 0 0 40px 0;
 }
@@ -270,5 +320,9 @@ footer p a {
   #players-list li {
     width: 100%;
     margin: 6px 0;
+  }
+
+  #standings-table {
+    width: 94%;
   }
 }

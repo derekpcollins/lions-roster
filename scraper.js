@@ -32,7 +32,7 @@ let downloadImg = async (url, name) => {
   );
 };
 
-let scrape = async () => {
+let scrapeRoster = async () => {
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
 
@@ -90,7 +90,54 @@ let scrape = async () => {
   return result;
 };
 
-scrape().then((value) => {
+let scrapeStandings = async () => {
+  const browser = await puppeteer.launch({ headless: true });
+  const page = await browser.newPage();
+
+  await page.exposeFunction("downloadImg", downloadImg);
+  await page.exposeFunction("autoScroll", autoScroll);
+
+  await page.goto("https://www.clevelandbrowns.com/team/standings/");
+  //await page.waitFor(1000); // DEPRECATED
+  await page.waitForTimeout(5000); // 10000
+
+  await page.setViewport({
+    width: 1200,
+    height: 800,
+  });
+
+  // Have to scroll the page in order to get the lazy loaded images
+  await autoScroll(page);
+
+  const result = await page.evaluate(() => {
+    let table = document.querySelector("table"); // Just get the first table, which is the "active" roster
+    let rows = table.querySelectorAll("tbody tr");
+    let data = [];
+
+    // Loop over the rows
+    rows.forEach((row) => {
+      let stats = row.querySelectorAll("td");
+      let club = new Object();
+
+      club.fullName = stats[0].querySelector(".d3-o-club-fullname").innerText;
+      club.shortName = stats[0].querySelector(".d3-o-club-shortname").innerText;
+      club.wins = stats[1].innerText;
+      club.losses = stats[2].innerText;
+      club.ties = stats[3].innerText;
+      club.percent = stats[4].innerText;
+
+      // Push the club object into the clubs array
+      data.push(club);
+    });
+
+    return data;
+  });
+
+  browser.close();
+  return result;
+};
+
+scrapeRoster().then((value) => {
   //console.log(typeof value);
   //console.log(value); // Success!
 
@@ -112,5 +159,16 @@ scrape().then((value) => {
   fs.writeFile("assets/data/last-updated.txt", `${date} at ${time}`, (err) => {
     if (err) return console.log(err);
     console.log("Saved date to last-updated.txt");
+  });
+});
+
+scrapeStandings().then((value) => {
+  //console.log(typeof value);
+  //console.log(value); // Success!
+
+  // Source: https://nodejs.org/en/knowledge/file-system/how-to-write-files-in-nodejs/
+  fs.writeFile("assets/data/standings.json", JSON.stringify(value), (err) => {
+    if (err) return console.log(err);
+    console.log("Saved to standings.json");
   });
 });
