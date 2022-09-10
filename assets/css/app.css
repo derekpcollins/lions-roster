@@ -5,7 +5,7 @@
   --img-background-color: rgba(255, 255, 255, 0.15);
   --text-color: rgba(255, 255, 255, 0.9);
   --light-text-color: rgba(255, 255, 255, 0.7);
-  --shadow-color: 92deg 65% 18%;
+  --shadow-color: 205deg 7% 44%;
   --shadow-elevation-low: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.41),
     0px 0.6px 0.6px -1.8px hsl(var(--shadow-color) / 0.33),
     0px 1.6px 1.5px -3.5px hsl(var(--shadow-color) / 0.25);
@@ -30,7 +30,7 @@
     --img-background-color: rgba(0, 0, 0, 0.3);
     --text-color: rgba(255, 255, 255, 0.75);
     --light-text-color: rgba(255, 255, 255, 0.5);
-    --shadow-color: 34deg 100% 3%;
+    --shadow-color: 203deg 100% 21%;
     --shadow-elevation-low: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.41),
       0px 0.6px 0.6px -1.8px hsl(var(--shadow-color) / 0.33),
       0px 1.6px 1.5px -3.5px hsl(var(--shadow-color) / 0.25);
