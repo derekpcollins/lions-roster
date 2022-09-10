@@ -1,6 +1,6 @@
 :root {
   color-scheme: light dark;
-  --background-color: green;
+  --background-color: #b0b7bc;
   --card-background-color: rgba(255, 255, 255, 0.25);
   --img-background-color: rgba(255, 255, 255, 0.15);
   --text-color: rgba(255, 255, 255, 0.9);
@@ -25,7 +25,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #311d00;
+    --background-color: #0075b8;
     --card-background-color: rgba(0, 0, 0, 0.3);
     --img-background-color: rgba(0, 0, 0, 0.3);
     --text-color: rgba(255, 255, 255, 0.75);

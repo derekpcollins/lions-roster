@@ -39,7 +39,7 @@ let scrapeRoster = async () => {
   await page.exposeFunction("downloadImg", downloadImg);
   await page.exposeFunction("autoScroll", autoScroll);
 
-  await page.goto("https://www.clevelandbrowns.com/team/players-roster/");
+  await page.goto("https://www.detroitlions.com/team/players-roster/");
   //await page.waitFor(1000); // DEPRECATED
   await page.waitForTimeout(5000); // 10000
 
@@ -97,7 +97,7 @@ let scrapeStandings = async () => {
   await page.exposeFunction("downloadImg", downloadImg);
   await page.exposeFunction("autoScroll", autoScroll);
 
-  await page.goto("https://www.clevelandbrowns.com/team/standings/");
+  await page.goto("https://www.detroitlions.com/team/standings/");
   //await page.waitFor(1000); // DEPRECATED
   await page.waitForTimeout(5000); // 10000
 
