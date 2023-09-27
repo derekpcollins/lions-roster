@@ -119,8 +119,8 @@ let scrapeStandings = async () => {
       let stats = row.querySelectorAll("td");
       let club = new Object();
 
-      club.fullName = stats[0].querySelector(".d3-o-club-fullname").innerText;
-      club.shortName = stats[0].querySelector(".d3-o-club-shortname").innerText;
+      club.fullName = stats[0].querySelector(".d3-o-club-fullname").innerText.innerText.replace(/(\r\n|\n|\r)/gm, "").trim();
+      club.shortName = stats[0].querySelector(".d3-o-club-shortname").innerText.innerText.replace(/(\r\n|\n|\r)/gm, "").trim();
       club.wins = stats[1].innerText;
       club.losses = stats[2].innerText;
       club.ties = stats[3].innerText;
