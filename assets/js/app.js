@@ -72,7 +72,8 @@ const createStandingsTable = (data) => {
     clubRowTemplate.querySelector(".percent").innerText = club.percent;
 
     const clubLogoImageEl = clubRowTemplate.querySelector(".club-logo img");
-    clubLogoImageEl.src = `assets/img/club-logos/${club.shortName.toLowerCase()}.svg`;
+    const clubLogo = club.shortName.replace(/[xz*]/g, '').toLowerCase(); // Removes x, z, and * for playoffs
+    clubLogoImageEl.src = `assets/img/club-logos/${clubLogo}.svg`;
     clubLogoImageEl.alt = club.fullName + " logo";
     clubLogoImageEl.title = club.fullName;
 
