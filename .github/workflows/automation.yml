@@ -8,6 +8,7 @@ on:
     - cron: "0 */3 * * *" # Runs every 3 hours (Check https://cron.help/#0_*/3_*_*_*)
 
 jobs:
+  if: false  # This disables the entire workflow
   scrape-browns-roster-automation:
     runs-on: ubuntu-latest
     steps:
